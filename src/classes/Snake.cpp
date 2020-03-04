@@ -34,16 +34,19 @@ void Snake::setIndex(int x){
 /*
  * Affiche le serpent
  */
-void afficherSnake(){
+void Snake::afficherSnake(){
+
 
 }
 
 /*
  * Ajoute un point au corp du serpent
  */
-void ajouterPoint(Point p){
+void Snake::ajouterPoint(Point p){
         
-
+    this->m_serpent[getIndex()] = p;
+    this->m_index += 1;
+    
 }
 
 //Basic destructeur
