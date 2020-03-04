@@ -21,7 +21,11 @@ int main()
     p.drawPoint();
     Point p2(10,5);
     p2.drawPoint();
+    //fenetre = Board::effacerPoint( p2);
     //cout << "press any key to quit" << endl;
+    p2.moveUp();
+    p2.moveLeft();
+    p2.drawPoint();
     getchar();
     fenetre->kill();
     return 0;
