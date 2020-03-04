@@ -11,22 +11,33 @@ public:
     
     //Basic destructeur
     ~Snake();
-
-    void ajouterPoint(Point p);
+    
+    //Accesseur du tableau serpent
+    Point getSnake() const ;
+    
+    //setter de l'index (endroit d'ajout de point dans serpent)
+    void setIndex(int x);
+    
+    //Accesseur de l'index
+    int getIndex() const ;
+    
     /*
      * Ajoute un point au corp du serpent
      */
+    void ajouterPoint(Point p);
     
-    void afficherSnake();
     /*
      * Affiche le serpent
      */
+    void afficherSnake();
     
 private:
 
-    Point Serpent[20];
+    Point m_serpent[20];
 
-
+    int m_index;
+    
+    
 
 };
 
