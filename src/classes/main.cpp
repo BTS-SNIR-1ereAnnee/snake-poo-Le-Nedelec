@@ -5,12 +5,18 @@
 #include <iostream>
 #include "Point.h"
 #include "Board.h"
+#include "Snake.h"
 
 
 using namespace std;
 
+//void verifLimite()
+
 int main()
 {
+    const int X_MAX = 20;
+    const int Y_MAX = 30;
+    
      // pointeurs sur l'unique instance de la classe UniqueObject
     Board *fenetre;
     // initialisation des pointeurs
@@ -42,6 +48,7 @@ int main()
         
             case '1':
                 p.erasePoint();
+                //if (Point::getX()+1 == X_MAX)
                 p.moveLeft();
                 p.drawPoint();
                 break;
