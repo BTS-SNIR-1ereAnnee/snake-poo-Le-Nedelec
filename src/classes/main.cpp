@@ -16,7 +16,7 @@ int main()
 {
     const int X_MAX = 20;
     const int Y_MAX = 30;
-    Snake serpent[20];
+    Snake serpent;
     
      // pointeurs sur l'unique instance de la classe UniqueObject
     Board *fenetre;
@@ -26,9 +26,10 @@ int main()
     Point p(10,10);
     Point p2(10,11);
     Point p3(10,12);
-    serpent[0].ajouterPoint(p);
-    serpent[1].ajouterPoint(p2);
-    serpent[2].ajouterPoint(p3);
+    serpent.ajouterPoint(p);
+    serpent.ajouterPoint(p2);
+    serpent.ajouterPoint(p3);
+    serpent.afficherSnake();
     
     /*p.drawPoint();
     p2.drawPoint();

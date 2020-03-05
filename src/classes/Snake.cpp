@@ -27,7 +27,7 @@ int Snake::getIndex() const {
 //setter de l'index (endroit d'ajout de point dans serpent)
 void Snake::setIndex(int x){
 
-    this->m_index = 0 ;    
+    this->m_index = x ;    
 
 }
 
@@ -36,7 +36,7 @@ void Snake::setIndex(int x){
  */
 void Snake::afficherSnake(){
 
-    for(int i = 0; i<getIndex(); i++){
+    for(int i = 0; i < getIndex(); i++){
     
         m_serpent[i].drawPoint();
     
