@@ -16,16 +16,21 @@ int main()
 {
     const int X_MAX = 20;
     const int Y_MAX = 30;
+    Snake serpent[20];
     
      // pointeurs sur l'unique instance de la classe UniqueObject
     Board *fenetre;
     // initialisation des pointeurs
     fenetre = Board::getInstance ();
-
+    
     Point p(10,10);
+    Point p2(10,11);
+    Point p3(10,12);
+    serpent[0].ajouterPoint(p);
+    serpent[1].ajouterPoint(p2);
+    serpent[2].ajouterPoint(p3);
+    
     /*p.drawPoint();
-    Point p2(10,5);
-    Point p3(5,5);
     p2.drawPoint();
     p2.erasePoint();
     p3.drawPoint();
@@ -38,13 +43,13 @@ int main()
     p3.moveDown();
     p3.moveRight();
     p3.drawPoint();
-    */
+    
     char sortie = '0';
     
     do 
     {
         cin >> sortie;
-        switch(sortie){
+        swi tch(sortie){
         
             case '1':
                 p.erasePoint();
@@ -71,7 +76,7 @@ int main()
         }
     
     }while(sortie != 'q');
-    
+    */
     
     getchar();
     fenetre->kill();
