@@ -31,6 +31,11 @@ public:
      */
     void afficherSnake();
     
+    /*
+     * Change les coordonnées des points dans Snake
+     */
+    void deplacementSnake();
+    
 private:
 
     Point m_serpent[20];

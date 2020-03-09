@@ -50,7 +50,7 @@ int main()
     do 
     {
         cin >> sortie;
-        swi tch(sortie){
+        switch(sortie){
         
             case '1':
                 p.erasePoint();
