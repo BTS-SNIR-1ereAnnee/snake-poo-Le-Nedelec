@@ -61,9 +61,9 @@ void Snake::deplacementSnake(Point p){
 
     for(int i = getIndex()-1; i > 0; i--){
     
-        m_serpent[i] = m_serpent[i-1];
         m_serpent[i].erasePoint();
-    
+        m_serpent[i] = m_serpent[i-1];
+        
     }
     
     m_serpent[0] = p;

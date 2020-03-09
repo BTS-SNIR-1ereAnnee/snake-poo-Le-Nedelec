@@ -55,10 +55,8 @@ int main()
         
             case '1':
                 p.erasePoint();
-                //if (Point::getX()+1 == X_MAX)
                 p.moveLeft();
                 serpent.deplacementSnake(p);
-                //serpent.ajouterPoint(p);
                 serpent.afficherSnake();
                 //serpent.debugSnake();
                 break;
@@ -66,7 +64,6 @@ int main()
                 p.erasePoint();
                 p.moveDown();
                 serpent.deplacementSnake(p);
-                //serpent.ajouterPoint(p);
                 serpent.afficherSnake();
                 //serpent.debugSnake();
                 break;
@@ -74,7 +71,6 @@ int main()
                 p.erasePoint();
                 p.moveRight();
                 serpent.deplacementSnake(p);
-                //serpent.ajouterPoint(p);
                 serpent.afficherSnake();
                 //serpent.debugSnake();
                 break;
@@ -82,7 +78,6 @@ int main()
                 p.erasePoint();
                 p.moveUp();
                 serpent.deplacementSnake(p);
-                //serpent.ajouterPoint(p);
                 serpent.afficherSnake();
                 //serpent.debugSnake();
                 break;
