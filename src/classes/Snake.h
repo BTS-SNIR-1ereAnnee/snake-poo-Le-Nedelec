@@ -36,14 +36,17 @@ public:
      */
     void deplacementSnake(Point p);
     
+    /*
+     * affiche les coordonnées des points stockés dans serpent 
+     */
     void debugSnake();
     
 private:
 
-    Point m_serpent[20];
-
-    int m_index;
     
+    Point m_serpent[20]; // member variable m_serpent
+
+    int m_index; // member variable m_index
     
 
 };

@@ -70,6 +70,9 @@ void Snake::deplacementSnake(Point p){
     
 }
 
+/*
+ * affiche les coordonnées des points stockés dans serpent 
+ */
 void Snake::debugSnake(){
 
    for(int i = 0; i < getIndex(); i++){
