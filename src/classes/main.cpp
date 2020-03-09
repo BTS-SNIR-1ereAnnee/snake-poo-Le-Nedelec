@@ -29,7 +29,7 @@ int main()
     serpent.ajouterPoint(p);
     serpent.ajouterPoint(p2);
     serpent.ajouterPoint(p3);
-    //serpent.afficherSnake();
+    serpent.afficherSnake();
     
     /*p.drawPoint();
     p2.drawPoint();
@@ -55,32 +55,36 @@ int main()
         
             case '1':
                 p.erasePoint();
-                serpent.deplacementSnake();
                 //if (Point::getX()+1 == X_MAX)
                 p.moveLeft();
-                serpent.ajouterPoint(p);
+                serpent.deplacementSnake(p);
+                //serpent.ajouterPoint(p);
                 serpent.afficherSnake();
+                //serpent.debugSnake();
                 break;
             case '2':
                 p.erasePoint();
-                serpent.deplacementSnake();
                 p.moveDown();
-                serpent.ajouterPoint(p);
+                serpent.deplacementSnake(p);
+                //serpent.ajouterPoint(p);
                 serpent.afficherSnake();
+                //serpent.debugSnake();
                 break;
             case '3':
                 p.erasePoint();
-                serpent.deplacementSnake();
                 p.moveRight();
-                serpent.ajouterPoint(p);
+                serpent.deplacementSnake(p);
+                //serpent.ajouterPoint(p);
                 serpent.afficherSnake();
+                //serpent.debugSnake();
                 break;
             case '5':
                 p.erasePoint();
-                serpent.deplacementSnake();
                 p.moveUp();
-                serpent.ajouterPoint(p);
+                serpent.deplacementSnake(p);
+                //serpent.ajouterPoint(p);
                 serpent.afficherSnake();
+                //serpent.debugSnake();
                 break;
             
         }

@@ -34,7 +34,9 @@ public:
     /*
      * Change les coordonnées des points dans Snake
      */
-    void deplacementSnake();
+    void deplacementSnake(Point p);
+    
+    void debugSnake();
     
 private:
 

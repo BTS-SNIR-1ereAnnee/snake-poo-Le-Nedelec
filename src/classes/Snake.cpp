@@ -57,14 +57,28 @@ void Snake::ajouterPoint(Point p){
 /*
  * Les points autres que la tête obtienne les coordonnées du point suivant
  */
-void Snake::deplacementSnake(){
+void Snake::deplacementSnake(Point p){
 
-    for(int i = 1; i < getIndex(); i++){
+    for(int i = getIndex()-1; i > 0; i--){
     
         m_serpent[i] = m_serpent[i-1];
+        m_serpent[i].erasePoint();
     
     }
     
+    m_serpent[0] = p;
+    
+}
+
+void Snake::debugSnake(){
+
+   for(int i = 0; i < getIndex(); i++){
+     
+     m_serpent[i].debug();
+    
+    }
+       
+
 }
 
 //Basic destructeur
